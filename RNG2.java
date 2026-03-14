@@ -11,6 +11,9 @@ public class RNG2 {
         int i = 0;
 
         while (i < numbers.length) {
+            // for (int i = 0; i < numbers.length; i++)
+            // x = (a * x + c) % m;
+            // numbers[i] = x;
             x = (a * x + c) % m;
             numbers[i] = x;
             i++;
@@ -19,5 +22,7 @@ public class RNG2 {
         for (int n : numbers) {
             System.out.println(n);
         }
+        // for (int n : numbers) {
+        // System.out.println(n);}
     }
 }
